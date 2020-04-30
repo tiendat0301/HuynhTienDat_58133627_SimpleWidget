@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nhập tên của bạn vào đây" />
+        android:hint="Nhập tên của bạn vào đây" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Nhập ngày sinh của bạn vào đây"
         android:inputType="date" />
 
     <TextView
@@ -41,18 +42,22 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Nam" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Nữ" />
     </RadioGroup>
 
@@ -108,7 +113,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Nhập sở thích khác" />
+            android:hint="Nhập sở thích khác" />
     </RadioGroup>
 
     <Button
