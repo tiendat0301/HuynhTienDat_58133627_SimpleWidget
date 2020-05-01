@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtTen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tên của bạn: " />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -22,40 +24,41 @@
         android:hint="Nhập tên của bạn vào đây" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtNS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ngày sinh:" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editNS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nhập ngày sinh của bạn vào đây"
-        android:inputType="date" />
+        android:inputType="datetime" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtGT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Giới tính:" />
 
     <RadioGroup
+        android:id="@+id/rdgGT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/btnNam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Nam" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/btnNu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -63,62 +66,57 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtST"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sở thích của bạn:" />
 
-    <RadioGroup
+    <CheckBox
+        android:id="@+id/ch1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:text="Xem phim" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Xem phim" />
+    <CheckBox
+        android:id="@+id/ch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nghe Nhạc" />
 
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nghe Nhạc" />
+    <CheckBox
+        android:id="@+id/ch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đi Cafe với bạn bè" />
 
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Đi cafe với bạn bè" />
+    <CheckBox
+        android:id="@+id/ch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ở nhà một mình" />
 
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ở nhà một mình" />
+    <CheckBox
+        android:id="@+id/ch5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vào bếp nấu ăn" />
 
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vào bếp nấu ăn" />
+    <TextView
+        android:id="@+id/txtSTK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sở thích khác:" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sở thích khác:" />
-
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Nhập sở thích khác" />
-    </RadioGroup>
+    <EditText
+        android:id="@+id/editSTK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập sở thích khác" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnXN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
